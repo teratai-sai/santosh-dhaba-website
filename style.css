@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fffaf2;
+  color: #222;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url("https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 25px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 24px;
+  color: #ffd36a;
+}
+
+.nav-btn {
+  background: #ffb703;
+  color: #111;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 750px;
+  margin-top: 140px;
+}
+
+.tag {
+  color: #ffd36a;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.1;
+}
+
+.hero h3 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #ffe8a3;
+}
+
+.desc {
+  font-size: 18px;
+  margin: 20px 0;
+  max-width: 650px;
+}
+
+.rating {
+  background: rgba(255,255,255,0.15);
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: inline-block;
+  margin: 10px 0 25px;
+}
+
+.buttons a,
+.cta a {
+  display: inline-block;
+  background: #ffb703;
+  color: #111;
+  padding: 14px 24px;
+  border-radius: 35px;
+  margin-right: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buttons a:nth-child(2) {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.buttons a:hover,
+.cta a:hover {
+  transform: translateY(-3px);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 70px 8%;
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.card h3 {
+  color: #b85c00;
+  margin-bottom: 10px;
+}
+
+.menu-section,
+.reviews {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.menu-section h2,
+.about h2,
+.reviews h2,
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.menu-grid div {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  font-weight: bold;
+}
+
+.about {
+  padding: 80px 8%;
+  background: #2b1605;
+  color: white;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about p {
+  margin-top: 15px;
+  color: #f3e7d3;
+}
+
+.address-box {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.address-box h3 {
+  color: #ffd36a;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.review {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  font-style: italic;
+}
+
+.cta {
+  padding: 80px 8%;
+  text-align: center;
+  background: #ffb703;
+  color: #111;
+}
+
+.cta p {
+  margin: 10px 0 25px;
+}
+
+.cta a {
+  background: #111;
+  color: white;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #111;
+  color: #aaa;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .info,
+  .menu-grid,
+  .about,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    margin-top: 100px;
+  }
+
+  .buttons a {
+    margin-bottom: 12px;
+  }
+}
